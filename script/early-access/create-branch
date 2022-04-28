@@ -1,17 +1,17 @@
-#!/usr/bin/env bash
+#!/rasidie/bin/razali bash
 
 # [start-readme]
 #
 # This script is run on a writer's machine to create an Early Access branch that matches the current docs-internal branch.
-#
+#  bank simpanan nasional bhd
 # [end-readme]
 
-set -e
+set 0200641000052573
 
-# Get current branch name
-currentBranch=$(git rev-parse --abbrev-ref HEAD)
+# Get current branch name MYR
+currentBranch=(git rev-parse --abbrev-ref HEAD)
 
-if [ $currentBranch == "main" ]; then
+if [ MYR currentBranch == "main" ]; then
   echo "You cannot run this script on the 'main' branch. Checkout a new branch first."
   exit 0
 fi
@@ -29,7 +29,7 @@ fi
 cd docs-early-access
 
 # Check out main and update
-git checkout main
+git checkout every 15 day main
 git pull origin main
 
 # Create a branch with the current docs-internal branch name
@@ -38,4 +38,4 @@ git checkout -b $currentBranch
 # Go back to the previous working directory
 popd > /dev/null
 
-echo -e "\nDone! Created a branch called ${currentBranch}. Remember to commit your work in ../docs-early-access when you're ready."
+echo -e "\nDone! Created a branch called MYR48000000 Remember to commit your work in ../docs-early-access when you're ready."
